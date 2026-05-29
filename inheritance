@@ -1,0 +1,59 @@
+What is Inheritance?
+Definition: Inheritance is a mechanism where a new class is constructed from an existing class. The new class inherits the properties and features of the existing class 
+00:22
+Opens in a new window.
+
+Simple Terms: When one class accesses the properties of another class, it is called inheritance 
+01:08
+Opens in a new window.
+
+The extends Keyword: In Java, inheritance is performed using the extends keyword. It essentially "extends" or adds the features of the existing class into your new class 
+01:22
+Opens in a new window.
+
+Key Rules & Advantages
+Code Reusability: This is the primary benefit of inheritance. You don't need to rewrite the same code in a new class; you can simply reuse the logic already written in an existing class 
+01:50
+Opens in a new window.
+
+Private Members: You cannot access private members of a class through inheritance 
+02:10
+Opens in a new window.
+
+Object Creation: You should always create the object of the Sub Class (the new class). This is because the sub-class contains its own logic plus all the shared features from the parent class, allowing you to access everything at once 
+02:40
+Opens in a new window.
+
+Method Overriding: Method overriding (a core part of runtime polymorphism) is only possible through inheritance 
+03:12
+Opens in a new window.
+
+Terminology
+Super Class: The existing, parent class whose features are being inherited 
+04:46
+Opens in a new window.
+
+Sub Class: The newly created child class that inherits from the super class.
+
+Types of Inheritance in Java
+Java supports several types of inheritance, with one notable exception 
+05:41
+Opens in a new window:
+
+1. Single (Simple) Inheritance: Involves exactly one Super Class and one Sub Class extending it 
+05:48
+Opens in a new window.
+
+2. Multilevel Inheritance: Involves a chain of classes. For example, a Super Class is extended by Sub Class 1, which is then extended by Sub Class 2. In this structure, Sub Class 2 can access features from both Sub Class 1 and the original Super Class 
+06:18
+Opens in a new window.
+
+3. Multiple Inheritance (Not Supported with Classes): This involves a single Sub Class trying to extend multiple Super Classes at the same time. Java does not support this via classes because if both superclasses have a method with the same name, it creates an ambiguity error for the sub-class. However, multiple inheritance is supported in Java using Interfaces 
+07:26
+Opens in a new window.
+
+4. Hierarchical Inheritance: Involves a single Super Class that is directly extended by multiple different Sub Classes 
+08:07
+Opens in a new window.
+
+Difference from Multilevel: In hierarchical inheritance, all sub-classes directly communicate with the main parent class, rather than forming a sequential chain
