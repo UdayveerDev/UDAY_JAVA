@@ -56,3 +56,22 @@ This is achieved in Java using Method Overriding
  for a method that is already defined in its parent class).
 */
 
+// method overriding 
+class shape {
+    void draw (){
+        System.out.println("can't say shape type");
+    }
+}
+class square extends shape{
+    @Override
+    void draw (){
+        super.draw(); //super keyword is used to get the superclass output 
+        System.out.println("the shape is square");
+    }
+}
+class B16{
+    public static void main (String []args){
+        shape r=new square();
+        r.draw();
+    }
+}
