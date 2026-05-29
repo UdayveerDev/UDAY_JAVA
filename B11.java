@@ -1,4 +1,4 @@
-//multiple inheritance 
+//multilevel inheritance 
 class A 
 {
 int a ;int b ;float c;
