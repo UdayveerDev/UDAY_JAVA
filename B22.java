@@ -1,6 +1,6 @@
 interface customerRaj{
     int amt=5;
-    void purchase();
+    void purchase(); // public + abstract 
 }
 class sellerSanju implements customerRaj
 {
