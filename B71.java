@@ -1,4 +1,13 @@
 // interrupt() method
+
+/*
+Definition: interrupt() is a method of the Thread class in Java.
+
+Function: It is used to interrupt a thread, signaling it to stop what it is doing.
+
+Key Condition for Execution: The interrupt() method only works if the thread is in a 
+sleeping or waiting state (e.g., via Thread.sleep() or wait()
+*/
 class A extends Thread 
 {
     public void run ()
