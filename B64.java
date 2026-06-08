@@ -1,3 +1,4 @@
+//Thread scheduler
 class A extends Thread
 {
     public void run ()
