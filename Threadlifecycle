@@ -1,0 +1,50 @@
+Thread Life Cycle in Java
+A thread in Java is known for independent execution. During its life cycle, a thread moves through various states. In Java, thread execution is controlled by the JVM (Java Virtual Machine). The JVM does not execute programs directly; it uses threads (like the default main thread) to execute programs.
+
+The 5 States of a Thread Life Cycle
+When you create a thread, it must pass through the following five states:
+
+1. Born / New State
+What happens: This is the very first state. The thread is created using the new keyword (e.g., Thread t = new Thread();).
+
+Status: The thread is just born; it has not started executing yet.
+
+2. Ready / Runnable State
+What happens: To move a thread from the Born state to the Ready state, you must call the start() method on the thread object (e.g., t.start();).
+
+Status: The thread is now fully prepared and ready to execute. However, it is not currently executing. It is waiting in a pool for the Thread Scheduler to select it for execution.
+
+3. Running State
+What happens: When the Thread Scheduler selects the thread from the Ready state, it moves into the Running state.
+
+Status: The thread is actively executing its task (specifically, it is executing the code inside its run() method).
+
+4. Waiting / Blocked / Suspended State
+What happens: While a thread is actively executing in the Running state, it can be paused or blocked and moved to the Waiting/Blocked state.
+
+Triggers: This happens if any of the following methods are called on the thread:
+
+join()
+
+sleep(time_in_ms)
+
+wait()
+
+suspend()
+
+Recovery: A thread cannot execute in this state. It must return to the Ready State first.
+
+If suspend() was called, you must call resume() to send it back to the Ready state.
+
+If wait() was called, you must call notify() or notifyAll().
+
+If sleep() was called, it will automatically move back to the Ready state once the specified time (e.g., 1000 milliseconds) expires.
+
+5. Dead / Exit State
+What happens: This is the final state of a thread's life cycle.
+
+Triggers:
+
+Natural Death: The thread naturally enters the Dead state when it has completely finished executing its run() method.
+
+Forced Death: If a thread is partially executed in the Running state and you want to terminate it immediately, you can call the stop() method (e.g., t.stop();). This forces the thread directly into the Dead state.
