@@ -77,12 +77,10 @@ class Bus implements Runnable
 class B73
 {
     public  static void main(String[] args) {
-        
-        Bus r=new Bus(1);
-        Thread t1 = new Thread(r);
-        Thread t2 = new Thread(r);
-        Thread t3 = new Thread(r);
-        
+        Bus r =new Bus(1);
+        Thread t1 =new Thread (r);
+        Thread t2 =new Thread (r);
+        Thread t3 =new Thread (r);
        
         t1.setName("Ram");
         t2.setName("Shyam");
