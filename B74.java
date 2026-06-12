@@ -2,7 +2,6 @@
 1. Introduction to Synchronization
 What is Synchronization? Synchronization is a technique used in multithreading to 
 control access to a shared resource by multiple threads.
-
 Purpose: The main purpose of synchronization is to overcome the problem of data inconsistency
  or "corrupt data" in multithreading.
 
