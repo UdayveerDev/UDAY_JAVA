@@ -26,12 +26,11 @@ regardless of what isAlive() returns.
 
 Example Code Logic
 */
-
-class A extends Thread 
+class A extends Thread
 {
     public void run()
     {
-        System.out.println("isAlive method program...!" );
+        System.out.println("isAlive method program!...");
     }
 }
 
@@ -42,11 +41,10 @@ class B70
         A t1 = new A();
         A t2 = new A();
 
-
-    System.out.println(t1.isAlive());
+        System.out.println(t1.isAlive());
         t1.start();
-
-    System.out.println(t1.isAlive());    
+        System.out.println(t1.isAlive());
         t2.start();
+        
     }
 }
