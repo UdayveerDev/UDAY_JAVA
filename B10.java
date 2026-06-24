@@ -1,5 +1,4 @@
 //multilevel inheritance 
-
 class A   // super class 
 {
 int a ; double b; String c ;

@@ -16,10 +16,7 @@ class class_name
 }
 
 */
-
-
 // this code will run 
-/*
 class B4 {
     int a;double b;String c;
     private B4()
@@ -31,7 +28,7 @@ class B4 {
         B4 r=new B4();
     }
 }
-*/
+
 
 
 //this code will not run because private constructor can not be instantiated outside the class 
