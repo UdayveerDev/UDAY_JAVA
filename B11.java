@@ -13,6 +13,7 @@ void sub(){
     System.out.println("the sub is :"+c);
 }
 
+
 }
 class B extends A 
 {
