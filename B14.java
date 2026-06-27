@@ -83,7 +83,7 @@ class B14 {
 */
 
 
-/*
+
 class A
 {
     void show (){
@@ -95,7 +95,7 @@ class A
 class B extends A 
 {
 void show (){
-    super.show();
+    super.show(); // calling super class A  
     int a =20;
     System.out.println(a);
 }
@@ -107,7 +107,7 @@ class B14
         r.show();
     }
 }
-*/
+
 
 
 
