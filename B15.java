@@ -71,6 +71,10 @@ public static void main(String []args){
 */
 
 
+
+
+
+
 class B15
 {
     int a ;
@@ -85,6 +89,21 @@ class B15
         r.show();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
