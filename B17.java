@@ -8,10 +8,10 @@ class A{
         return value ;
     }
 }
-class B{
+class B17{
     public static void main (String [] args){
         A r =new A();
         r.setValue(100);
-        System.out.println(r.getValue);  
+        System.out.println(r.getValue());  
     }
 }
