@@ -40,6 +40,14 @@ Interfaces (100% Abstraction): Use interfaces when the client
  knowledge of the implementation. The developer is responsible
   for 100% of the logic and coding.
 */
+
+
+
+
+
+
+
+
 abstract class Animal
 {
 
